@@ -7,14 +7,6 @@ import { ExpenseForm } from './components/ExpenseForm';
 import { ExpenseList } from './components/ExpenseList';
 import { v4 as uuidv4 } from 'uuid';
 
-
-// initial values
-/* const initialExpenses = [
-  {id: uuidv4(), charge:'rent', amount: 1600},
-  {id: uuidv4(), charge:'car payment', amount: 600},
-  {id: uuidv4(), charge:'credit card bill', amount: 100}
-];  */
-
 const initialExpenses = localStorage.getItem('expenses') ? JSON.parse(localStorage.getItem('expenses')) : [] ;
 
 function App() {
