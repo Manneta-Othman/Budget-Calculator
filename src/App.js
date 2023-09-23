@@ -61,8 +61,9 @@ function App() {
       setAmount('');
 
     }else if(editItem){
-      let editedItem = expenses.map(item => item.id === id ? {...item, charge, amount} : item);
+             let editedItem = expenses.map(item => item.id === id ? {...item, charge, amount} : item);
       
+        
       setExpenses([...editedItem]);
 
       setCharge('');
